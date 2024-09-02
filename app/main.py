@@ -9,6 +9,7 @@ app = FastAPI()
 orig_origins = [
     "http://localhost:3000",
     "http://localhost:8000",
+    "https://ycombinator1.vercel.app",
 ]
 
 app.add_middleware(
