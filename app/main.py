@@ -10,6 +10,7 @@ orig_origins = [
     "http://localhost:3000",
     "http://localhost:8000",
     "https://ycombinator1.vercel.app",
+    "*",
 ]
 
 app.add_middleware(
@@ -29,5 +30,7 @@ def handle_pipeline(pipeline: PipelineData):
     return parse_pipeline(pipeline)
 
 
+
+# python -m uvicorn app.main:app --reload
 
 # python -m uvicorn app.main:app --reload
